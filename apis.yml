@@ -1,0 +1,79 @@
+aid: homads
+url: https://raw.githubusercontent.com/api-evangelist/homads/refs/heads/main/apis.yml
+name: Homads
+kind: company
+description: Homads is an Austin-based mid-term rental marketplace connecting hosts
+  and guests for furnished stays of 30 days or longer. The platform pairs rental
+  listings with neighborhood-matching technology to help relocating professionals,
+  travelers, and people in transition find a place to live. Homads is primarily a
+  consumer and host web application; it does not publish a public developer API. Its
+  rental inventory is exposed to property managers through channel-manager partners
+  (for example Hostfully) via private connectivity, not a documented public API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Rental
+- Mid-Term Rental
+- Real Estate
+- Marketplace
+- Neighborhood Data
+created: '2026-06-21'
+modified: '2026-06-21'
+specificationVersion: '0.19'
+apis:
+- aid: homads:rental-market-data
+  name: Homads Rental Market Data
+  tags:
+  - Rental
+  - Market Data
+  - Listings
+  - Mid-Term Rental
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://homads.com/
+  baseURL: https://homads.com
+  properties:
+  - url: https://homads.com/
+    type: Documentation
+  - url: openapi/homads-openapi.yml
+    type: OpenAPI
+  description: The Homads marketplace surface for searching and browsing mid-term
+    (30+ day) furnished rental listings by location, dates, and neighborhood. As of
+    the catalog date this is a consumer-facing web product; Homads does not publish
+    a public developer API or API reference for programmatic access to rental market
+    data. Listing inventory reaches property managers through private channel-manager
+    integrations rather than a documented public API.
+- aid: homads:rent-comparison
+  name: Homads Rent Comparison
+  tags:
+  - Rent Comparison
+  - Neighborhood Data
+  - Relocation
+  - Search
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://homads.com/
+  baseURL: https://homads.com
+  properties:
+  - url: https://homads.com/
+    type: Documentation
+  - url: openapi/homads-openapi.yml
+    type: OpenAPI
+  description: The neighborhood-matching and side-by-side rental comparison
+    experience Homads provides to help guests compare furnished mid-term rentals
+    across neighborhoods during a relocation. This is delivered through the Homads
+    web application; no public developer API, documented endpoints, or rent-comp
+    data feed is published for programmatic consumption as of the catalog date.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/homads
+- type: Website
+  url: https://homads.com/
+- type: Documentation
+  url: https://homads.com/
+- type: Plans
+  url: plans/homads-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/homads-rate-limits.yml
+- type: FinOps
+  url: finops/homads-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

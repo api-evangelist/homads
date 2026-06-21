@@ -1,0 +1,9 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Homads API",
+    "version": "0.0",
+    "description": "Homads is a mid-term rental marketplace at https://homads.com. As of 2026-06-21 it publishes no public developer API, API reference, or documented endpoints, so this collection contains no requests. It records the absence of a public API and points to the human-facing product surfaces."
+  },
+  "items": []
+}

@@ -1,0 +1,15 @@
+{
+  "info": {
+    "_postman_id": "9a7d1c2e-1f4b-4c3a-bf2d-0d6e3a1b8c44",
+    "name": "Homads API",
+    "description": "Homads is a mid-term rental marketplace at https://homads.com. As of 2026-06-21 it publishes no public developer API, API reference, or documented endpoints, so this collection contains no requests. It records the absence of a public API and points to the human-facing product surfaces. No endpoints are fabricated.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://homads.com"
+    }
+  ]
+}

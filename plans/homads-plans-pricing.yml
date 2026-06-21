@@ -1,0 +1,86 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Homads
+providerId: homads
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- Rental
+- Mid-Term Rental
+- Real Estate
+- Marketplace
+- Plans
+description: >-
+  Homads is a mid-term rental marketplace, not an API product, so it has no API
+  pricing, plans, or developer tiers. Pricing below reflects the publicly
+  described marketplace economics for hosts and guests. Per public sources,
+  listing, browsing, and messaging on Homads are free; each payment carries a
+  credit card transaction fee (reported at ~3%), and Homads handles and disburses
+  monthly payments to hosts in 30-day intervals. There is no metered, per-call,
+  or per-token API billing because no public API is offered.
+notes: >-
+  Marketplace fee figures are drawn from public summaries and may change; verify
+  current host/guest fees on homads.com during reconciliation. No API pricing
+  exists to reconcile.
+sources:
+- https://homads.com/
+- https://www.hostfully.com/integrations/homads/
+- https://help.hostfully.com/en/articles/5499769-homads-hostfully
+plans:
+- id: homads-marketplace
+  name: Marketplace (Host & Guest)
+  type: usage
+  description: >-
+    Marketplace participation for hosts and guests. Listing, browsing, and
+    messaging are free; transaction fees apply to payments. This is product
+    pricing, not API pricing.
+  entries:
+  - label: Listing, Browsing & Messaging
+    name: listing_browsing_messaging
+    type: flat
+    metric: usage
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: free
+    userMultiplied: false
+  - label: Payment Processing Fee
+    name: payment_processing_fee
+    type: usage
+    metric: transactions
+    limit: -1
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: approximately 3% credit card transaction fee per payment
+    userMultiplied: false
+  elements:
+  - name: Rental Listing Search & Browse
+  - name: Neighborhood Matching
+  - name: Host/Guest Messaging
+  - name: Monthly Payment Handling & Disbursement
+- id: homads-public-api
+  name: Public Developer API
+  type: usage
+  description: >-
+    Homads does not offer a public developer API, developer plan, or metered API
+    billing as of the catalog date. There is nothing to price here.
+  entries:
+  - label: Public API Access
+    name: public_api
+    type: flat
+    metric: contract
+    limit: 0
+    timeFrame: month
+    geo: global
+    unit: 1
+    price: not available - no public API
+    userMultiplied: false
+  elements:
+  - name: No Public API
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

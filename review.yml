@@ -1,0 +1,93 @@
+aid: homads
+name: Homads
+review:
+  question: Does Homads expose a documented public developer API?
+  answer: false
+  date: '2026-06-21'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Homads publishes no public API of any
+    transport (REST, SSE, or WebSocket), so there is no event-driven or
+    streaming surface to model.
+findings:
+  summary: |
+    Homads (https://homads.com) is an Austin-based mid-term rental
+    marketplace, founded 2014-2015 by Vi Nguyen and Lan Chu, focused on
+    furnished stays of 30 days or longer. It is a consumer- and host-facing
+    web application that pairs rental listings with neighborhood-matching
+    technology for relocating guests. As of the review date, Homads does NOT
+    publish a public developer API, API reference, developer portal, OpenAPI
+    document, or SDK. There is no api.homads.com host and no homads.com/api
+    documentation. Homads has backend API infrastructure, but it is exposed
+    only through private channel-manager connectivity (for example the
+    Hostfully channel), which is mapped using the partner's own API, not a
+    documented public Homads API. The catalog therefore documents the real
+    product surfaces (Rental Market Data marketplace, Rent Comparison /
+    neighborhood matching) honestly, with an OpenAPI document that defines no
+    paths and an accurate description of API absence. No endpoints were
+    fabricated.
+  productSurfaces:
+    - name: Mid-Term Rental Marketplace
+      url: https://homads.com/
+      type: WebApplication
+      documented: true
+      note: Search, browse, and book furnished 30+ day rental listings.
+    - name: Neighborhood Matching / Rent Comparison
+      url: https://homads.com/
+      type: WebApplication
+      documented: true
+      note: Helps relocating guests compare furnished rentals across neighborhoods.
+    - name: Host Tools & Payments
+      url: https://homads.com/
+      type: WebApplication
+      documented: true
+      note: Free listing/messaging; payments processed with a ~3% transaction fee, disbursed monthly.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No documented public REST API. Backend exists but is not publicly exposed or documented.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No documented Server-Sent Events surface.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No documented WebSocket surface.
+  publicApi:
+    available: false
+    apiReference: false
+    developerPortal: false
+    openapi: false
+    sdk: false
+    note: >-
+      Inventory reaches property managers via private channel-manager
+      partnerships (for example Hostfully), not a public Homads API.
+sources:
+  - url: https://homads.com/
+    type: Website
+    note: Consumer/host marketplace; no developer or API links surfaced.
+  - url: https://www.hostfully.com/integrations/homads/
+    type: PartnerIntegration
+    note: Homads inventory connected via Hostfully channel manager.
+  - url: https://help.hostfully.com/en/articles/5499769-homads-hostfully
+    type: Documentation
+    note: Confirms the Homads channel is mapped through Hostfully's own API; directs technical inquiries to team@homads.com. No public Homads API referenced.
+  - url: https://www.builtinaustin.com/articles/homads-fills-gap-between-homeaway-airbnb-year-long-lease
+    type: Article
+    note: Background on Homads as a mid-term rental marketplace.
+actions:
+  openapiPath: openapi/homads-openapi.yml
+  apisYmlUpdated: true
+  reason: |
+    No public API surface exists. An OpenAPI 3.0.1 document was authored with
+    paths: {} and an accurate description recording the absence of a public
+    developer API, so the catalog honestly represents Homads as a consumer/host
+    marketplace rather than implying programmatic API access. apis.yml documents
+    the real product surfaces and human-facing URLs without fabricating
+    endpoints.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

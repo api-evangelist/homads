@@ -1,0 +1,42 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Homads
+providerId: homads
+created: '2026-06-21'
+modified: '2026-06-21'
+reconciled: false
+tags:
+- Rental
+- Mid-Term Rental
+- Real Estate
+- Marketplace
+- Rate Limiting
+description: >-
+  Homads does not publish a public developer API and therefore documents no
+  public API rate limits, quotas, or throttling policies. There are no per-key
+  RPM/RPD/quotas to record because there is no public API surface. Any limits
+  governing private channel-manager connectivity (for example the Hostfully
+  channel) are internal to that partnership and are not publicly documented.
+notes: >-
+  If Homads launches a public API in the future, capture its documented rate
+  limits here. Nothing to reconcile as of the catalog date.
+sources:
+- https://homads.com/
+- https://help.hostfully.com/en/articles/5499769-homads-hostfully
+responseCodes:
+  throttled: not documented
+limits:
+- name: Public API Rate Limit
+  scope: account
+  metric: requests
+  limit: not applicable - no public API
+  notes: Homads exposes no documented public API, so no public rate limit exists.
+policies:
+- name: No Public API
+  description: >-
+    No public developer API is offered, so there is no published rate-limiting,
+    quota, or throttling policy.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
