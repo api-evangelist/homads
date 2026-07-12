@@ -62,6 +62,8 @@ apis:
     web application; no public developer API, documented endpoints, or rent-comp
     data feed is published for programmatic consumption as of the catalog date.
 common:
+- type: DomainSecurity
+  url: security/homads-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/homads
 - type: Website
