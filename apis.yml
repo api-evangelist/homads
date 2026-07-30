@@ -9,7 +9,19 @@ description: Homads is an Austin-based mid-term rental marketplace connecting ho
   consumer and host web application; it does not publish a public developer API. Its
   rental inventory is exposed to property managers through channel-manager partners
   (for example Hostfully) via private connectivity, not a documented public API.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/homads.png
 tags:
 - Rental
 - Mid-Term Rental
