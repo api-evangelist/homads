@@ -1,0 +1,29 @@
+openapi: 3.0.1
+info:
+  title: Homads API
+  description: >-
+    Homads is an Austin-based mid-term rental marketplace for furnished stays of
+    30 days or longer, pairing rental listings with neighborhood-matching
+    technology for relocating guests. As of the catalog date (2026-06-21), Homads
+    does NOT publish a public developer API, API reference, or documented
+    endpoints. The product is a consumer- and host-facing web application at
+    https://homads.com. Rental inventory is exposed to property managers through
+    private channel-manager connectivity (for example the Hostfully channel),
+    which uses the partner's own API rather than a documented public Homads API.
+    This OpenAPI document therefore intentionally defines no paths. It exists to
+    record the absence of a public API and to point to the human-facing product
+    surfaces. If Homads publishes a public API in the future, real endpoints
+    should be added here. No endpoints are fabricated.
+  termsOfService: https://homads.com/
+  contact:
+    name: Homads
+    email: team@homads.com
+    url: https://homads.com/
+  version: '0.0'
+servers:
+  - url: https://homads.com
+    description: >-
+      Homads marketplace web application. This is the consumer and host website,
+      not a documented programmatic API base URL.
+paths: {}
+components: {}

@@ -1,0 +1,14 @@
+{
+  "provider": "homads",
+  "sources": [
+    "homads-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived homads-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
