@@ -45,7 +45,7 @@ apis:
   properties:
   - url: https://homads.com/
     type: Documentation
-  - url: openapi/homads-openapi.yml
+  - url: openapi/_original/homads-openapi.yml
     type: OpenAPI
   description: The Homads marketplace surface for searching and browsing mid-term
     (30+ day) furnished rental listings by location, dates, and neighborhood. As of
@@ -66,7 +66,7 @@ apis:
   properties:
   - url: https://homads.com/
     type: Documentation
-  - url: openapi/homads-openapi.yml
+  - url: openapi/_original/homads-openapi.yml
     type: OpenAPI
   description: The neighborhood-matching and side-by-side rental comparison
     experience Homads provides to help guests compare furnished mid-term rentals
