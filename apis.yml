@@ -36,7 +36,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/homads.png
 tags:
 - Rentals
 - Mid-Term Rental
-- Real-Estate
+- Real Estate
 - Marketplace
 - Neighborhood Data
 tags_raw:
@@ -45,6 +45,7 @@ tags_raw:
 - Real Estate
 - Marketplace
 - Neighborhood Data
+- Real-Estate
 created: '2026-06-21'
 modified: '2026-06-21'
 specificationVersion: '0.23'
@@ -63,7 +64,6 @@ apis:
   - Mid-Term Rental
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://homads.com/
-  baseURL: https://homads.com
   properties:
   - url: https://homads.com/
     type: Documentation
@@ -84,7 +84,6 @@ apis:
   - Search
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://homads.com/
-  baseURL: https://homads.com
   properties:
   - url: https://homads.com/
     type: Documentation
