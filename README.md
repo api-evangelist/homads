@@ -1,4 +1,4 @@
-# Homads (homads)
+# Homads
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,77 +66,107 @@
 
 Homads is an Austin-based mid-term rental marketplace connecting hosts and guests for furnished stays of 30 days or longer. The platform pairs rental listings with neighborhood-matching technology to help relocating professionals, travelers, and people in transition find a place to live. Homads is primarily a consumer and host web application; it does not publish a public developer API. Its rental inventory is exposed to property managers through channel-manager partners (for example Hostfully) via private connectivity, not a documented public API.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/homads/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/homads/refs/heads/main/apis.yml)
+**Areas:** Rentals · Mid-Term Rental · Real Estate · Marketplace · Neighborhood Data
 
-> Note on API availability: As of 2026-06-21, Homads does not offer a public developer API, API reference, OpenAPI document, or SDK. The entries below document Homads' real product surfaces and human-facing URLs. The OpenAPI document defines no paths and accurately records the absence of a public API. No endpoints are fabricated.
+## Homads on APIs.io
 
-## Tags
+Everything profiled for Homads is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/homads/](https://apis.io/providers/homads/)** — or go straight to one of the APIs or properties below.
 
-- Rental
-- Mid-Term Rental
-- Real Estate
-- Marketplace
-- Neighborhood Data
+### APIs (2)
 
-## Timestamps
+- [Homads Rental Market Data](https://apis.io/apis/homads/rental-market-data/) — The Homads marketplace surface for searching and browsing mid-term (30+ day) furnished rental listings by location, dates, and neighborhood. As of the…
+- [Homads Rent Comparison](https://apis.io/apis/homads/rent-comparison/) — The neighborhood-matching and side-by-side rental comparison experience Homads provides to help guests compare furnished mid-term rentals across…
 
-- **Created:** 2026-06-21
-- **Modified:** 2026-06-21
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Homads Rental Market Data
+#### Collections (1)
 
-The Homads marketplace surface for searching and browsing mid-term (30+ day) furnished rental listings by location, dates, and neighborhood. As of the catalog date this is a consumer-facing web product; Homads does not publish a public developer API or API reference for programmatic access to rental market data. Listing inventory reaches property managers through private channel-manager integrations rather than a documented public API.
+Postman and Open Collection request collections.
 
-- **Human URL:** [https://homads.com/](https://homads.com/)
-- **Base URL:** `https://homads.com`
+- [Homads API](https://apis.io/collections/homads/open-homads/)
 
-#### Tags
+#### Security (1)
 
-- Rental
-- Market Data
-- Listings
-- Mid-Term Rental
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Properties
+- [Homads Domain Security](https://apis.io/security/homads/homads-domain-security/)
 
-- [Documentation](https://homads.com/)
-- [OpenAPI](openapi/homads-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/homads.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/homads.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Plans and pricing (1)
 
-### Homads Rent Comparison
+Published plans, tiers and prices.
 
-The neighborhood-matching and side-by-side rental comparison experience Homads provides to help guests compare furnished mid-term rentals across neighborhoods during a relocation. This is delivered through the Homads web application; no public developer API, documented endpoints, or rent-comp data feed is published for programmatic consumption as of the catalog date.
+- [Homads Plans Pricing](https://apis.io/plans/homads/homads-plans-pricing/)
 
-- **Human URL:** [https://homads.com/](https://homads.com/)
-- **Base URL:** `https://homads.com`
+#### Rate limits (1)
 
-#### Tags
+Published request limits.
 
-- Rent Comparison
-- Neighborhood Data
-- Relocation
-- Search
+- [Homads Rate Limits](https://apis.io/rate-limits/homads/homads-rate-limits/)
 
-#### Properties
+#### FinOps (1)
 
-- [Documentation](https://homads.com/)
-- [OpenAPI](openapi/homads-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/homads.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/homads.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+What the API costs to run, by operation.
 
-## Common Properties
+- [Homads Finops](https://apis.io/finops/homads/homads-finops/)
 
-- [LinkedIn](https://www.linkedin.com/company/homads)
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://homads.com/)
 - [Documentation](https://homads.com/)
-- [Plans](plans/homads-plans-pricing.yml)
-- [Rate Limits](rate-limits/homads-rate-limits.yml)
-- [Fin Ops](finops/homads-finops.yml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 14.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 25.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 5.3 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/homads/](https://apis.io/providers/homads/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Homads: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/homads/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
